@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Links</title>
+    </head>
+    <body>
+        <h1>HTML LINKS</h1>
+        <p>Links are found in nearly all web pages. Links allow users to click their way from page to page.</p>
+        <h2>HTML Links - Hyperlinks</h2>
+        <ui>
+            <li>HTML links are hyperlinks.</li>
+            <li>You can click on a link and jump to another document.</li>
+            <li>When you move the mouse over a link, the mouse arrow will turn into a little hand.</li>
+        </ui>
+        <hr>
+        <h2>HTML Links - Syntax</h2>
+        <ui>
+            The HTML <a> tag defines a hyperlink. It has the following syntax:
+            <li>&lt;a&gt;href="url">link text&lt;/a&gt;</li>
+            <li>The most important attribute of the <code>a</code>> element is the <code>href</code> attribute, which indicates the link's destination.</li>
+            <li>The link text is the part that will be visible to the reader.</li>
+            <li>Clicking on the link text, will send the reader to the specified URL address.</li>
+        </ui>
+        <h3>Example</h3>
+        <a href="https://www.w3schools.com/">Visit W3Schools.com!</a>
+        <p>By default, links will appear as follows in all browsers:</p>
+        <ui>
+            <li>An unvisited link is underlined and blue</li>
+            <li>A visited link is underlined and purple</li>
+            <li>An active link is underlined and red</li>
+        </ui>
+        <hr>
+        <h2>HTML Links - The target Attribute</h2>
+        <p>By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.</p>
+        <p>The <code style="color:red;">target</code> attribute specifies where to open the linked document.</p>
+        <p>The <code style="color:red;">target</code> attribute can have one of the following values:</p>
+        <ui>
+            <li><code style="color:red;">_self</code>- Default. Opens the document in the same window/tab as it was clicked</li>
+            <li><code style="color:red;">_blank</code>- Opens the document in a new window or tab</li>
+            <li><code style="color:red;">_parent</code>- Opens the document in the parent frame</li>
+            <li><code style="color:red;">_top</code>- Opens the document in the full body of the window</li>
+        </ui>
+        <p>Examples</p>
+        <a href="https://www.w3schools.com/" target="_self">Visit W3Schools(Ex-_self)!</a>
+        <br>
+        <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools(Ex-_blank)!</a>
+        <br>
+        <a href="https://www.w3schools.com/" target="_parent">Visit W3Schools(Ex-_parent)!</a>
+        <br>
+        <a href="https://www.w3schools.com/" target="_blank">_top W3Schools(Ex-_blank)!</a>
+        <!-- <br> -->
+        <!-- <iframe src="https://www.w3docs.com" width="500" height="500"></iframe> -->
+        <hr>
+        <h2>Absolute vs relative URLs</h2>
+        <p>Both examples above are using an absolute URL (a full web address) in the href attribute.</p>
+        <p>A local link (a link to a page within the same website) is specified with a relative URL (without the "https://www" part):</p>
+        <p>Examples</p>
+        <h3>Absolute URLs</h3>
+        <p><a href="https://www.w3.org/">W3C</a></p></a>
+        <p><a href="https://www.google.com/">Google</a></p>
+        <h3>Relative URLs</h3>
+        <p><a href="/media/abid2243/05e50347-5aa2-4383-a889-94d44fed50ae/my_learning_workspace/Full-Stack-Web-Development/Front-End/images/Css_tuts.asp">HTML Images</a></p>
+        <p><a href="/media/abid2243/05e50347-5aa2-4383-a889-94d44fed50ae/my_learning_workspace/Full-Stack-Web-Development/Front-End/images/Css_tuts.asp">CSS Tutorial</a></p>
+        <hr>
+        
+        <h2>HTML Links - Use an Image as a Link</h2>
+        <p>To use an image as a link, just put the <code>img</code> tag inside the <code>a</code> tag:</p>
+        <p>Examples</p>
+        <a href="https://www.w3schools.com/html/html_links.asp">
+            <img src="/media/abid2243/05e50347-5aa2-4383-a889-94d44fed50ae/my_learning_workspace/Full-Stack-Web-Development/Front-End/images/Smiling Leo Perfect GIF.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+        </a>
+        <hr>
+        <h2>Link to an Email Address</h2>
+        <p>Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email)</p>
+        <p>Examples</p>
+        <a href="mailto:someone@example.com">Send email</a>
+        </a>
+        <hr>
+        <h2>Button as a Link</h2>
+        <p>To use an HTML button as a link, you have to add some JavaScript code.</p>
+        <p>JavaScript allows you to specify what happens at certain events, such as a click of a button:</p>
+        <p>Examples</p>
+        <button onclick="document.location='/media/abid2243/05e50347-5aa2-4383-a889-94d44fed50ae/my_learning_workspace/Full-Stack-Web-Development/Front-End/images/default.asp'">HTML Tutorial</button>
+        <hr>
+        <h2>Link Titles</h2>
+        <p>The title attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element.</p>
+        <p>Examples</p>
+        <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+        <hr>
+        <h2>Link: Colors</h2>
+        <p>An HTML link is displayed in a different color depending on whether it has been visited, is unvisited, or is active.</p>
+        <ui>
+            <li>An unvisited link is underlined and blue</li>
+            <li>A visited link is underlined and purple</li>
+            <li>An active link is underlined and red</li>
+            <li>You can change the link state colors, by using CSS:</li>
+        </ui>
+        <p>Example</p>
+        <a href="/media/abid2243/05e50347-5aa2-4383-a889-94d44fed50ae/my_learning_workspace/Full-Stack-Web-Development/Front-End/HTML/Tuturials/13 a: Links_colors.html"
+         title="Example Html colors">Visit our HTML Tutorial</a>
+         <a href="/media/abid2243/05e50347-5aa2-4383-a889-94d44fed50ae/my_learning_workspace/Full-Stack-Web-Development/Front-End/HTML/Tuturials/13 b: Links_button_colors.html"
+         title="Example Html colors">Visit our HTML Tutorial</a>
+         
+    </body>
+
+</html>
